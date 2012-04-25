@@ -176,26 +176,30 @@ input:focus, textarea:focus {
  * Homepage Layout
  * ======================================================================== */
 #homepage_logo_image_wrapper {
-    background: #ff00ff;
     float: left;
     margin: 0 2% 0 0;
+    overflow: hidden;
     position: relative;
-    width: 33%;
+    width: 28%;
 }
+    #homepage_logo_image_wrapper img{
+        width: 90%;
+    }
 
+/* Middle div content */
 #homepage_main_content_wrapper {
-    background: #0000ff;
     float: left;
     margin: 0 2% 0 0;
     position: relative;
-    width: 40%;
+    width: 43%;
 }
 
+
+/* Right div content */
 #homepage_right_side_wrapper {
-    background: #00ff00;
     float: left;
     position: relative;
-    width: 23%;
+    width: 25%;
 }
 
 
