@@ -9,7 +9,7 @@
 
 /* HTML Elements */
 html, body {
-    background:#f4f4f4 url(../image/bg2.png);
+    background:#f4f4f4 url(../image/background.png);
     color: #2c2d32;
     font-family: 'Cantarell', Helvetica, Arial, sans-serif;
     height: 100%;
@@ -122,10 +122,10 @@ input:focus, textarea:focus {
  * ======================================================================== */
 #header_wrapper {
     height: 150px;
-    margin: 0 5%;
     position: relative;
 }
     #header {
+        margin: 0 5%;
     }
 
     #st_francis_header {
@@ -144,19 +144,57 @@ input:focus, textarea:focus {
  * Site navigation
  * ======================================================================== */
 #site_nav_wrapper {
-    border-radius: 5px;
-
-    background: #dedede;
-    bottom: 10px;
-    height: 45px;
+    bottom: 5px;
+    height: 70px;
     left: 0;
     position: absolute;
-    text-align: center;
     right: 0;
 }
-    #site_nav a {
-        color: #336699;
+    #site_nav_inner {
+        bottom:0;
+        left:0;
+        position:absolute;
+        right:0;
+        top:0;
+        z-index: 100;
     }
+        #site_nav {
+            height: 100%;
+            margin: 0 5%;
+        }
+            #site_nav a {
+                color: #ffffff;
+                display: block;
+                height: 100%;
+                float: left;
+                font-weight: bold;
+                margin: 0 2% 0 0;
+                min-width: 120px;
+                padding: 15px 0 0 0; 
+                text-align: center;
+                text-shadow: -1px 1px 3px rgba(0,0,0,.8);
+            }
+            #site_nav a:hover {
+                text-shadow: -1px 1px 3px rgba(0,0,0,1), 
+                            0 1px 20px #F0EE44,
+                            0 1px 5px #ffffff;
+            }
+
+    #site_nav_background {
+        box-shadow: 0 0 4px #202020;
+        background: url(../image/leather.png);
+        bottom: 15px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+
+.bookmark { 
+    background: url(../image/bookmark.png) top left no-repeat !important;    
+}
+.bookmark:hover {
+}
 
 /* ========================================================================    
  *
@@ -198,8 +236,15 @@ input:focus, textarea:focus {
 /* Right div content */
 #homepage_right_side_wrapper {
     float: left;
+    overflow: hidden;
     position: relative;
     width: 25%;
+}
+
+/* Google Calendar on home page */
+#agenda_calendar {
+    height: 300px;
+    width: 100%;
 }
 
 
@@ -223,13 +268,9 @@ input:focus, textarea:focus {
     right:0;
     text-shadow: 0 0 1px #101010;
 }
-    #footer_stitch {
-        background: url(../image/stitch.png) repeat-x;
-        height: 2px;
-        left:0;
-        position:absolute;
-        right: 0;
-        top:10px;
+
+    #footer_wrapper .stitch_top {
+        top: 10px !important;
     }
     
     #footer {
@@ -242,15 +283,26 @@ input:focus, textarea:focus {
         }
 
 
-
-
-
-
 /* ========================================================================    
  *
  * REUSABLE CLASSES 
  *
  * ======================================================================== */
+.stitch_top,
+.stitch_bottom {
+    background: url(../image/stitch.png) repeat-x;
+    height: 2px;
+    left:0;
+    position:absolute;
+    right: 0;
+}
+.stitch_top {
+    top: 8px;
+}
+.stitch_bottom {
+    bottom: 6px;
+}
+
 .align_right { text-align:right; }
 .bold { font-weight:bold; }
 .center { text-align:center; }
