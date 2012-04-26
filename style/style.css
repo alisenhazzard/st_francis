@@ -175,9 +175,15 @@ input:focus, textarea:focus {
                 text-shadow: -1px 1px 3px rgba(0,0,0,.8);
             }
             #site_nav a:hover {
+                background: rgba(190,160,130,.3);
+                height: 40px;
+                text-decoration: none;
+
+                /*
                 text-shadow: -1px 1px 3px rgba(0,0,0,1), 
                             0 1px 20px #F0EE44,
                             0 1px 5px #ffffff;
+                */
             }
 
     #site_nav_background {
@@ -194,6 +200,7 @@ input:focus, textarea:focus {
     background: url(../image/bookmark.png) top left no-repeat !important;    
 }
 .bookmark:hover {
+    height: 100% !important;
 }
 
 /* ========================================================================    
