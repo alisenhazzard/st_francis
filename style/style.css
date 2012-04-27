@@ -231,6 +231,14 @@ input:focus, textarea:focus {
         width: 90%;
     }
 
+#st_francis_image {
+    opacity:1.0;
+}
+
+#st_francis_image:hover {
+    opacity:0.4;
+}
+
 /* Middle div content */
 #homepage_main_content_wrapper {
     float: left;
@@ -239,6 +247,19 @@ input:focus, textarea:focus {
     width: 43%;
 }
 
+.parish_bulletin {
+    float: left;
+    margin: 5px 45px 5px 0;
+}
+    .parish_bulletin a {
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        box-shadow: 0 0 6px rgba(100,100,100,1);
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 136px;
+    }
 
 /* Right div content */
 #homepage_right_side_wrapper {
@@ -444,6 +465,7 @@ a.down {
     background: url(../image/sprite.png)  13px -168px no-repeat #f3f3f3;
     width: 18px;
 }
+                background: rgba(255,255,255,.1);
 a.save-big {
     background: url(../image/sprite.png) 15px 11px no-repeat #f3f3f3;
     font-size: 16px;
