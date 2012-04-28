@@ -1,5 +1,7 @@
-<html>
+<!doctype html>
+<html lang='en'>
 <head>
+    <meta charset='UTF-8'>
     <title>St. Francis of Assisi</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -52,60 +54,122 @@
                 <!-- Homepage main content -->
                 <div id='homepage_main_content_wrapper'>
                     <div id='homepage_main_content'>
-                        <h2>Welcome</h2>
-                        St. Francis of Assisi Parish is a Christ-centered community. We strive to be a warm, friendly and caring parish family, where the gifts and talents of all,  young and old,  are recognized and graciously used to nurture others, and to worship together in a vibrant and spirit-filled liturgy. We will go forth healed, affirmed and refreshed to meet the challenge of life in our spiritual growth.  <br /><br />
-                        
-                        <!-- Images and links to bulletins -->
-                        <h2>Parish Bulletins</h2>
-                            <div id="bulletin_images_wrapper">
-                                <div id="first_bulletin" class="parish_bulletin">
-                                    <a href="#">
-                                        <img src="bulletins/april22.png">
-                                        <br />
-                                        April 22, 2012
-                                    </a>
-                                </div>
 
-                                <div id="second_bulletin" class="parish_bulletin">
-                                    <a href="#">
-                                        <img src="bulletins/april15.png">
-                                        <br />
-                                        April 15, 2012
-                                    </a>
-                                </div>
-
-                                <div id="third_bulletin" class="parish_bulletin">
-                                    <a href="#">
-                                        <img src="bulletins/april8.png">
-                                        <br />
-                                        April 8, 2012
-                                    </a>
-                                </div>
-
-                                <div class="clear"></div>
-                            </div>
-                            <br /><br />
+                        <div class='content_block_wrapper'>
+                            <h2>Welcome</h2>
+                            <strong>St. Francis of Assisi Catholic Church</strong>
+                            is a Christ-centered community. We strive to be a warm, friendly and caring parish family, where the gifts and talents of all,  young and old,  are recognized and graciously used to nurture others, and to worship together in a vibrant and spirit-filled liturgy. We will go forth healed, affirmed and refreshed to meet the challenge of life in our spiritual growth.  
+                        </div>
                             
-                        <!-- Registration Forms with link -->
-                        <h2>Register With Us</h2>
-                        If you are interested in registering with our Parish, please <a href="/registration_form">download registration forms.</a> 
-                        Forms can also be found in a pamphlet holder in the narthex, and dropped off in the nearby dropbox.<br /><br />
-                        Thank you for your interest in joining St. Francis of Assisi Parish. We welcome you!<br />
+                        <div class='content_block_wrapper'>
+                            <!-- Images and links to bulletins -->
+                            <h2>What's New</h2>
+                            <div class='content_block_inner'>
+                                <div id='whats_new_content'>
+                                    <div id="bulletin_images_wrapper">
+                                        <div id="first_bulletin" class="parish_bulletin">
+                                            <a href="#">
+                                                <img src="bulletins/april22.png">
+                                                <br />
+                                                Weekly Bulletin <br />
+                                                April 22, 2012
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Other what's new stuff -->
+                                    <div id='whats_new_right'>
+                                        <h3>Announcements</h3>
+                                        We Need Your Face! Family Portrait Time for all parishioners.
+                                        <a href='https://www.securedata-trans14.com/ap/stfrancisofassisicatholic1/index.php?page=10'
+                                            title='Family Portraits'>
+                                            Register for family portraits
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class='content_block_wrapper'>
+                            <!-- Registration Forms with link -->
+                            <h2>Register With Us</h2>
+                            If you are interested in registering with our Parish, please 
+                            <a href="/registration_form">download registration forms.</a> 
+                            <br /><br /> 
+                            Forms can also be found in a pamphlet holder in the narthex, and dropped off in the nearby dropbox. Thank you for your interest in joining St. Francis of Assisi Parish. We welcome you!
+                            <br />
+                        </div>
                     </div>
                 </div>
 
                 <!-- Right side columns -->
                 <div id='homepage_right_side_wrapper'>
                     <div id='homepage_right_side'>
-                        <h2>Mass Schedule</h2>
-                        <strong>Monday through Friday:</strong> 8:00 am <br />
-                        <strong>Thursday:</strong> 6:30 pm (Spanish) <br />
-                        <strong>Saturday Vigil:</strong> 4:30 pm, 6:30 pm (Spanish) <br />
-                        <strong>Sunday:</strong> 7:30 am, 9:00 am, 11:00 am, 4:30 pm <br />
-                            (Rosary is held 25 minutes before each Mass.)<br />
-                        <br /> <br />
-                        <h2>Event Calendar</h2>
-                        <iframe id="agenda_calendar" src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=stfrancisccseffner%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0" frameborder="0" scrolling="no"></iframe>
+
+                        <div id='mass_schedule' class='content_block_wrapper'>
+                            <h2>Mass Schedule</h2>
+                            <div class='table'>
+                                <div class='tr two_columns'>
+                                    <div class='td col_left'>
+                                        Monday 
+                                        <span class='italic font_small center'>
+                                            to
+                                        </span>
+                                        Friday
+                                    </div>
+                                    <div class='td col_right'>
+                                        8:00am 
+                                    </div>
+                                </div>
+                                <div class='tr two_columns'>
+                                    <div class='td col_left'>
+                                        Saturday Vigil
+                                    </div>
+                                    <div class='td col_right'>
+                                        4:30pm
+                                    </div>
+                                </div>
+                                <div class='tr two_columns'>
+                                    <div class='td col_left'>
+                                        Sunday
+                                    </div>
+                                    <div class='td col_right'>
+                                        7:30am, 9:00am, 11:00am, 4:30pm
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id='rosary_text'> 
+                                (Rosary is held 25 minutes before each Mass.)
+                            </div>
+                            <br />
+
+                            <div class='sub_header'>Español</div>
+                            <div class='table'>
+                                <div class='tr two_columns'>
+                                    <div class='td col_left'>
+                                        Jueves
+                                    </div>
+                                    <div class='td col_right'>
+                                        6:30pm
+                                    </div>
+                                </div>
+                                <div class='tr two_columns'>
+                                    <div class='td col_left'>
+                                        Sábado Vigil
+                                    </div>
+                                    <div class='td col_right'>
+                                        6:30pm
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='content_block_wrapper'>
+                            <h2>Event Calendar</h2>
+                            <iframe id="agenda_calendar" src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=stfrancisccseffner%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0" frameborder="0" scrolling="no"></iframe>
+                        </div>
                     </div>
                 </div>
 

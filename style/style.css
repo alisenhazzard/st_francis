@@ -35,17 +35,21 @@ a:hover {
  * Headers 
  * -------------------------------------- */
 h1,h2,h3,h4,h5,h6, #header{
+    color: #DBAB49;
     font-family: 'Averia Serif Libre', Helvetica, Arial, sans-serif;
     margin:0;
     padding:0;
+    text-shadow: 0px 1px 1px #202020, 
+                0px 0px 1px rgba(40, 40, 40, .5), 
+                0 4px 2px rgba(30, 30, 30, .1);
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight:bold;
 }
 h2 {
-    font-size:1.7em;
+    font-size:2.2em;
     font-weight:bold;
 }
 
@@ -121,7 +125,7 @@ input:focus, textarea:focus {
  *
  * ======================================================================== */
 #header_wrapper {
-    height: 150px;
+    height: 160px;
     position: relative;
 }
     #header {
@@ -130,7 +134,7 @@ input:focus, textarea:focus {
 
     #st_francis_header {
         color: #DBAB49;
-        font-size:4.2em;
+        font-size:4.4em;
         font-weight:bold;
         margin: 0;
         padding: 0;
@@ -227,17 +231,20 @@ input:focus, textarea:focus {
     position: relative;
     width: 28%;
 }
-    #homepage_logo_image_wrapper img{
-        width: 90%;
-    }
 
 #st_francis_image {
     opacity:1.0;
+    width:90%;
 }
 
+/*
 #st_francis_image:hover {
     opacity:0.4;
 }
+    #st_francis_image img{
+        width: 100%;
+    }
+*/
 
 /* Middle div content */
 #homepage_main_content_wrapper {
@@ -248,7 +255,6 @@ input:focus, textarea:focus {
 }
 
 .parish_bulletin {
-    float: left;
     margin: 5px 45px 5px 0;
 }
     .parish_bulletin a {
@@ -260,6 +266,24 @@ input:focus, textarea:focus {
         text-align: center;
         width: 136px;
     }
+
+/* ========================================================================
+ * What's new section 
+ * ========================================================================*/
+#whats_new_content {
+    min-height: 250px;
+}
+#bulletin_images_wrapper, #whats_new_right {
+    position:relative;
+}
+#bulletin_images_wrapper {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#whats_new_right {
+    margin: 0 0 0 200px;
+}
 
 /* Right div content */
 #homepage_right_side_wrapper {
@@ -275,9 +299,34 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
+#mass_schedule .table{
+    font-size:.8em;
+}
+    #rosary_text {
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        font-size: .8em;
+        font-style: italic;
+        margin: 9px 0 0 0;
+        padding: 9px 0 0 0;
+        text-align: left;
+    }
 
-
-
+/* ========================================================================    
+ *
+ * Other Pages
+ *
+ * ======================================================================== */
+.content_block_wrapper {
+    margin: 0 0 2em 0;
+    position: relative;
+}
+    .content_block_wrapper h2 {
+        border-bottom: 1px solid rgba(0,0,0, .3);
+        margin: 0 0 10px 0;        
+    }
+    .content_block_inner {
+        position: relative;
+    }
 /* ========================================================================    
  *
  * Footer
@@ -309,6 +358,10 @@ input:focus, textarea:focus {
         #address_footer {
             text-align: center;
         }
+        #footer h4 {
+            color: #ffffff;
+            text-shadow: -1px 1px 3px rgba(0, 0, 0, .8);
+        }
 
 
 /* ========================================================================    
@@ -316,6 +369,31 @@ input:focus, textarea:focus {
  * REUSABLE CLASSES 
  *
  * ======================================================================== */
+.table {
+    position: relative;
+}
+    .table .tr {
+        margin: 0 0 5px 0;
+        overflow: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    .table .tr .td{
+        float: left;
+    }
+    .tr .col_left {
+        font-weight: bold;
+        margin:0 3% 0 0;
+        text-align: left;
+        width: 42%;
+    }
+    .tr .col_right {
+        text-align: left;
+        width: 55%;
+    }
+
+
 .stitch_top,
 .stitch_bottom {
     background: url(../image/stitch.png) repeat-x;
@@ -331,6 +409,10 @@ input:focus, textarea:focus {
     bottom: 6px;
 }
 
+.sub_header {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-weight:bold;
+}
 .align_right { text-align:right; }
 .bold { font-weight:bold; }
 .center { text-align:center; }
@@ -343,6 +425,8 @@ input:focus, textarea:focus {
     direction:rtl;
 }
 .font_small { font-size:.9em; }
+.font_small { font-size:.8em; }
+.italic { font-style: italic; }
 .grey_text {
     color: #aeaeae;
     text-shadow:1px 1px 0 #ffffff;
