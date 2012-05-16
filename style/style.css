@@ -69,6 +69,7 @@ pre, .code_style {
  * Lists 
  * -------------------------------------- */
 ul, li {
+    list-style-type: circle;
 }
 
 
@@ -224,7 +225,7 @@ input:focus, textarea:focus {
 /* ========================================================================    
  * Homepage Layout
  * ======================================================================== */
-#homepage_logo_image_wrapper {
+#left_side_wrapper {
     float: left;
     margin: 0 2% 0 0;
     overflow: hidden;
@@ -233,6 +234,7 @@ input:focus, textarea:focus {
 }
 
 #st_francis_image {
+    margin: 15px 0 0 0;
     opacity:1.0;
     width:90%;
 }
@@ -247,7 +249,7 @@ input:focus, textarea:focus {
 */
 
 /* Middle div content */
-#homepage_main_content_wrapper {
+#main_content_wrapper {
     float: left;
     margin: 0 2% 0 0;
     position: relative;
@@ -286,7 +288,7 @@ input:focus, textarea:focus {
 }
 
 /* Right div content */
-#homepage_right_side_wrapper {
+#right_side_wrapper {
     float: left;
     overflow: hidden;
     position: relative;
@@ -327,6 +329,23 @@ input:focus, textarea:focus {
     .content_block_inner {
         position: relative;
     }
+
+.bookmark2 {
+    background: url(../image/bookmark.png) top left no-repeat !important;    
+}
+.bookmark2:hover {
+    height: 100% !important;
+}
+#left_side_nav_wrapper {
+    display: block;
+    float: none;
+    height: 300px;
+    margin: 10px;
+    padding: 5px 10px;
+    position: relative;
+    width: 100%;
+
+}
 /* ========================================================================    
  *
  * Footer
@@ -341,7 +360,7 @@ input:focus, textarea:focus {
     color: #f0f0f0;
     height: 80px;
     left:0;
-    position:absolute;
+    position: absolute;
     right:0;
     text-shadow: 0 0 1px #101010;
 }
@@ -362,13 +381,48 @@ input:focus, textarea:focus {
             color: #ffffff;
             text-shadow: -1px 1px 3px rgba(0, 0, 0, .8);
         }
+/* ========================================================================    
+ *
+ * PARISH TAB 
+ *
+ * ======================================================================== */
+.clergy_photos {
+    float: left;
+    margin: 10px 10px 0 0;
+}
 
+/* ========================================================================    
+ *
+ * SACRAMENT TAB 
+ *
+ * ======================================================================== */
+#sacrament_image {
+    margin: 15px 0 25px 0;
+}
+
+/* ========================================================================    
+ *
+ * GIVE TAB 
+ *
+ * ======================================================================== */
+.online_giving {
+    float: left;
+    margin: 0 15px 0 0;
+}
 
 /* ========================================================================    
  *
  * REUSABLE CLASSES 
  *
  * ======================================================================== */
+.biography {
+    text-align: justify;
+}
+
+.tab {
+    margin-left: 40px;
+}
+
 .table {
     position: relative;
 }
