@@ -71,6 +71,9 @@ pre, .code_style {
 ul, li {
     list-style-type: circle;
 }
+ul {
+    margin-top: 5px;
+}
 
 
 /* --------------------------------------
@@ -301,7 +304,8 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
-#mass_schedule .table{
+#mass_schedule .table,
+#parish_mass_schedule .table {
     font-size:.8em;
 }
     #rosary_text {
@@ -336,16 +340,7 @@ input:focus, textarea:focus {
 .bookmark2:hover {
     height: 100% !important;
 }
-#left_side_nav_wrapper {
-    display: block;
-    float: none;
-    height: 300px;
-    margin: 10px;
-    padding: 5px 10px;
-    position: relative;
-    width: 100%;
 
-}
 /* ========================================================================    
  *
  * Footer
@@ -386,9 +381,56 @@ input:focus, textarea:focus {
  * PARISH TAB 
  *
  * ======================================================================== */
-.clergy_photos {
+#parish_mass_bulletin_wrapper .bulletin_wrapper {
+    margin: 1em 0 0 0;
+}
+
+.clergy_photos img {
     float: left;
     margin: 10px 10px 0 0;
+}
+
+.clergy_photos {
+    clear: both;
+    overflow: auto;
+    position: relative;
+    margin: 0 0 15px 0;
+}
+
+#left_side_nav_wrapper {
+    background: #EDDFB2;
+    border: 1px dashed rgba(0,0,0, .3);
+    display: block;
+    float: none;
+    margin: 10px;
+    padding: 5px 10px;
+    position: fixed;
+    width: 20%;
+}
+    #left_side_nav_wrapper a {
+        text-shadow: 0 0 1px #ffffff;
+    }
+
+.map_location {
+    border: 1px solid #000000;
+    width: 425px;
+}
+
+#main_content_parish_wrapper {
+    margin: 0 0 0 28%;
+    position: relative;
+}
+
+.parish_content_wrapper {
+    float: left;
+    margin: 0 3% 0 0;
+    overflow: hidden;
+    width: 59%;
+}
+
+#parish_mass_bulletin_wrapper {
+    float: left;
+    width: 38%;
 }
 
 /* ========================================================================    
@@ -409,6 +451,19 @@ input:focus, textarea:focus {
     float: left;
     margin: 0 15px 0 0;
 }
+/* ========================================================================    
+ *
+ * RCIA/RCIC TAB 
+ *
+ * ======================================================================== */
+#rcic_form_info {
+    float: left;
+    width: 350px;
+}
+
+#rcic_form_boxes {
+    float: left;
+}
 
 /* ========================================================================    
  *
@@ -416,6 +471,13 @@ input:focus, textarea:focus {
  *
  * ======================================================================== */
 .biography {
+    text-align: justify;
+}
+
+blockquote {
+    background: rgba(255,255,255,.4);
+    font-style: italic;
+    padding: 3px 7px;
     text-align: justify;
 }
 
