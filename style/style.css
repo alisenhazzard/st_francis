@@ -282,10 +282,10 @@ input:focus, textarea:focus {
         box-shadow: 0 0 6px rgba(100,100,100,1);
         display: inline;
         float:left;
-        margin: 5px 10px 5px 0;
+        margin: 5px 1% 5px 0;
         padding: 0;
         text-align: center;
-        width: 136px;
+        width: 30%;
     }
 
 /* ========================================================================
@@ -420,7 +420,9 @@ input:focus, textarea:focus {
 #parish_mass_bulletin_wrapper .bulletin_wrapper {
     margin: 1em 0 0 0;
 }
-
+#parish_mass_bulletin_wrapper .bulletin_wrapper img {
+    width: 98%;
+}
 .clergy_photos img {
     float: left;
     margin: 10px 10px 0 0;
@@ -505,7 +507,7 @@ input:focus, textarea:focus {
 }
 
 .prayer_quote {
-    font-size: .9em;
+    font-size: .8em;
     text-align: center;
 }
 /* ========================================================================    
