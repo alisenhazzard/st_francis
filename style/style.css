@@ -242,6 +242,10 @@ input:focus, textarea:focus {
     width:90%;
 }
 
+.image_shadow {
+    box-shadow: 5px 5px 5px rgba(0,0,0, .3);    
+}
+
 /*
 #st_francis_image:hover {
     opacity:0.4;
@@ -267,6 +271,18 @@ input:focus, textarea:focus {
         border: 2px solid #ffffff;
         box-shadow: 0 0 6px rgba(100,100,100,1);
         display: block;
+        padding: 0;
+        text-align: center;
+        width: 136px;
+    }
+   
+    .parish_bulletin2 a {
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        box-shadow: 0 0 6px rgba(100,100,100,1);
+        display: inline;
+        float:left;
+        margin: 5px 10px 5px 0;
         padding: 0;
         text-align: center;
         width: 136px;
@@ -308,8 +324,7 @@ input:focus, textarea:focus {
 #parish_mass_schedule .table {
     font-size:.8em;
 }
-    #rosary_text {
-        border-top: 1px solid rgba(0, 0, 0, .1);
+    .rosary_text {
         font-size: .8em;
         font-style: italic;
         margin: 9px 0 0 0;
@@ -341,6 +356,27 @@ input:focus, textarea:focus {
     height: 100% !important;
 }
 
+/* Main Content on tab pages */
+#tab_content_wrapper, #tab_with_right_content_wrapper {
+    margin: 0 0 0 28%;
+    position: relative;
+}
+#tab_with_right_content_wrapper {
+    overflow: auto;
+    position: relative;
+}
+    #tab_with_right_content_wrapper .tab_main_content {
+        float: left;
+        margin: 0 3% 0 0;
+        position: relative;
+        width: 55%; 
+    }
+
+    #tab_with_right_content_wrapper .tab_right_side_wrapper {
+        float: left;
+        position: relative;
+        width: 42%;
+    }
 /* ========================================================================    
  *
  * Footer
@@ -398,8 +434,10 @@ input:focus, textarea:focus {
 }
 
 #left_side_nav_wrapper {
-    background: #EDDFB2;
-    border: 1px dashed rgba(0,0,0, .3);
+    background: url(../image/leather2.png);
+    border: 1px solid rgba(0,0,0, .3);
+    border-radius:8px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .3);
     display: block;
     float: none;
     margin: 10px;
@@ -423,9 +461,9 @@ input:focus, textarea:focus {
 
 .parish_content_wrapper {
     float: left;
-    margin: 0 3% 0 0;
+    margin: 0 10% 0 0;
     overflow: hidden;
-    width: 59%;
+    width: 50%;
 }
 
 #parish_mass_bulletin_wrapper {
@@ -444,12 +482,31 @@ input:focus, textarea:focus {
 
 /* ========================================================================    
  *
+ * COMMUNITY TAB 
+ *
+ * ======================================================================== */
+#community_left_wrapper {
+    margin: 15px 0 0 0;
+    opacity:1.0;
+    width:90%;
+}
+
+#main_content_wrapper .community_main {
+    width: 65%;
+}
+/* ========================================================================    
+ *
  * GIVE TAB 
  *
  * ======================================================================== */
 .online_giving {
     float: left;
     margin: 0 15px 0 0;
+}
+
+.prayer_quote {
+    font-size: .9em;
+    text-align: center;
 }
 /* ========================================================================    
  *
@@ -479,6 +536,19 @@ blockquote {
     font-style: italic;
     padding: 3px 7px;
     text-align: justify;
+}
+
+.event_headline {
+    float: left;
+    margin: 0 50px 0 10px;
+}
+
+img.event_image {
+    float: left;
+}
+
+.mini_header {
+    font-weight: bold;
 }
 
 .tab {
